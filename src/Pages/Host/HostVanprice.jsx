@@ -4,7 +4,10 @@ function HostVanprice() {
     const van=useOutletContext()
 
   return (
-    <h1 className='text-xl font-serif  mt-6 w-[500px] ml-5'>${van.price}/day</h1>
+    <div className='rounded-2xl bg-[#edf5ef] p-5 text-[#143126]'>
+      <p className='text-sm uppercase tracking-[0.2em] text-[#7d8f85]'>Nightly rate</p>
+      <h1 className='mt-3 text-4xl font-black'>${van.price}<span className='text-lg font-semibold text-[#52665c]'> / night</span></h1>
+    </div>
   )
 }
 

@@ -43,7 +43,7 @@ import { loader as HostVanDetailLoader } from "./Components/HostVanDetail";
 function App() {
   
   return (
-    <div className="h-screen w-screen flex  flex-grows flex-col">
+    <div className="app-shell min-h-screen w-full">
    <RouterProvider router={router}/>
   </div>
   );
